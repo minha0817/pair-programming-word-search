@@ -10,13 +10,10 @@ const transpose = function (letters) {
   }
   console.log("returnArray:", returnArray);
   return returnArray;
-
-  // const verticalJoin = letters.map(ls => ls.join(''))
 };
 
 const wordSearch = (letters, word) => {
   const horizontalJoin = letters.map((ls) => ls.join(""));
-  //[["AWCFDSDFF"],["SEINFELD"],[], []]
   console.log("horizontalJoin:", horizontalJoin);
 
   for (joinedLetters of horizontalJoin) {
@@ -34,5 +31,3 @@ const wordSearch = (letters, word) => {
 };
 
 module.exports = wordSearch;
-
-// //1) should return false if the word is not present
